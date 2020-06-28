@@ -1,0 +1,141 @@
+:root {
+  --color-blue: #0095fd; 
+  --color-pale-blue: hsl(223, 100%, 88%);
+  --color-light-red: hsl(354, 100%, 66%);
+  --color-gray: hsl(0, 0%, 59%);
+  --color-dark-blue: hsl(209, 33%, 12%);
+  --font-size: 20px;
+}
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  min-height: 100%;
+  padding: 70px 30px;
+}
+
+header img {
+  margin-bottom: 40px;
+  width: 75px;
+}
+
+header h1 {
+  font-weight: 300;
+  font-size: 30px;
+  color: var(--color-gray);
+  margin-bottom: 25px;
+}
+
+header h1 strong {
+  font-weight: 700;
+  color: black;
+}
+
+main h3 {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+main button, main input {
+  outline: none;
+  font-family: inherit;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 40px;
+  padding: 15px;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+main input {
+  color: var(--color-pale-blue);
+  padding: 15px 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-pale-blue)
+}
+
+main button {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-blue);
+  margin-bottom: 70px;
+}
+
+main .image-dashboard {
+  width: 96%;
+  max-width: 650px;
+}
+
+.iconos .fab {
+  border: 1px solid var(--color-pale-blue);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--color-blue)
+}
+
+.iconos .fab ~ .fab {
+  margin-left: 30px;
+} 
+
+.iconos .fa-facebook-f {
+  padding: 10px 13px;
+}
+
+.iconos {
+  margin-bottom: 40px;
+}
+
+footer {
+  margin-top: 90px;
+}
+
+footer .copyright {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--color-gray);
+}
+
+@media screen and (min-width: 1440px){
+  header h1 {
+    font-size: 40px;
+  }
+
+  main h3 {
+    font-size: 18px;
+  }
+
+  main button, main input {
+    display: unset;
+  }
+
+  main button {
+    max-width: 200px;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+
+  .iconos {
+    margin-bottom: 20px;
+  }
+}
